@@ -3588,6 +3588,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
+
 CREATE VIEW [dbo].[VE_VW_HV_Dates] AS
 	--=====================================================================================================
 	-- The following Intellectual Property Notice applies to all sofTheoWinare code below and replaces any
@@ -3608,6 +3609,7 @@ CREATE VIEW [dbo].[VE_VW_HV_Dates] AS
 	--=====================================================================================================
 	--  DATE    |       VERSION     |       CHANGED BY      |                   COMMENTS
 	--=====================================================================================================
+	--	2017-10-13		1.1			Ryan Kirby				Testing change for version control project.
 	--=====================================================================================================
 SELECT 1 AS Hack
 			,convert(DATE, DATEADD(q, DATEDIFF(q, 0, CURRENT_TIMESTAMP), 0)) AS TP_StartDate
